@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+}
+
+html, body {
+    height: 100%;
+}
+code{
+    font-size: 2rem;
+    color: black;
+}
+
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #210203;
+    padding:24px;
+    display: grid;
+    gap: 1em;
+    grid: "header" auto
+    "nav" auto
+    "aside" 1fr
+    "main" 1fr
+    "footer" auto/1fr
+
+}
+.container>*{
+    width: 100%;
+    padding: 16px;
+    background-color: #34c280;
+    color:#210203
+    
+}
+@media all and (min-width:768px){
+    .container{
+        grid:" header header" auto
+        "nav nav" auto
+        "aside main" 1fr
+        "aside footer" auto / 2fr 10fr
+    }
+}
+aside{
+    ul {
+        list-style: none;
+        
+    }
+   
+ 
+   }
+   ol {
+    margin: 0 auto; /* Define as margens superior e inferior como 0 e a margem lateral como 'auto' para centralizar */
+    max-width: 600px; /* Define uma largura máxima para a lista */
+    padding-left: 50px; /* Adiciona um recuo à esquerda para manter a identação dos itens */
+}
+#hozier img {
+    float: left; /* Define a imagem para flutuar à esquerda */
+    margin-right: 20px; /* Adiciona uma margem à direita para separar a imagem do texto */
+}
+#wasteland img {
+    float: left; /* Define a imagem para flutuar à esquerda */
+    margin-right: 20px; /* Adiciona uma margem à direita para separar a imagem do texto */
+}
+#unreal img {
+    float: left; /* Define a imagem para flutuar à esquerda */
+    margin-right: 20px; /* Adiciona uma margem à direita para separar a imagem do texto */
+}
+}
